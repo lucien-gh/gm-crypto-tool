@@ -1,0 +1,5 @@
+{
+  "name": "国密算法工具箱",
+  "description": "一个基于 Vue 3 构建的 Web 工具，支持 SM2 签名验签、SM3 哈希计算和 SM4 对称加解密。",
+  "requestFramePermissions": []
+}
