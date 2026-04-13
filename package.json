@@ -1,5 +1,6 @@
 {
-  "name": "react-example",
+  "name": "sm-crypto",
+  "homepage": "https://lucien-gh.github.io/gm-crypto-tool/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +9,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
     "clean": "rm -rf dist",
-    "lint": "vue-tsc --noEmit"
+    "lint": "vue-tsc --noEmit",
+    "predeploy": "npm run clean && npm run build --mode github",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.2.8",
