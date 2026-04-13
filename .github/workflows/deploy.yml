@@ -26,6 +26,8 @@ jobs:
         run: npm install
 
       - name: Build
+        env:
+          VITE_API_URL: "/gm-crypto-tool/"
         run: npm run build  -- --mode github
 
       - name: Setup Pages
